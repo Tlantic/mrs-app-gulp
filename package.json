@@ -1,0 +1,34 @@
+{
+  "name": "mrs-app-gulp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tlantic/mrs-app-gulp.git"
+  },
+  "keywords": [
+    "gulp",
+    "cli",
+    "tasks",
+    "mrs-app"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tlantic/mrs-app-gulp/issues"
+  },
+  "homepage": "https://github.com/Tlantic/mrs-app-gulp#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "extendify": "^1.0.0",
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
+  }
+}
