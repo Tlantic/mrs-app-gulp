@@ -32,7 +32,6 @@
     "bower": "^1.7.7",
     "del": "^2.2.0",
     "extendify": "^1.0.0",
-    "grunt-util": "^0.5.3",
     "gulp": "^3.9.1",
     "gulp-angular-filesort": "^1.1.1",
     "gulp-angular-templatecache": "^1.8.0",
