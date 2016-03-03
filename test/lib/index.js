@@ -19,9 +19,6 @@ describe( 'mrs-app-gulp', function () {
         var options = {
                 generalOption: true,
             brand: 'test',
-                globs: {
-                    someFiles: ['']
-                },
                 paths: {
                     out: ''
                 }
@@ -39,8 +36,6 @@ describe( 'mrs-app-gulp', function () {
             expect( steroidsGulp.requiredTasks ).to.be.a.function;
             expect( steroidsGulp ).to.have.ownProperty( 'mrsTasks' );
             expect( steroidsGulp.requiredTasks ).to.be.an.object;
-            expect( steroidsGulp ).to.have.ownProperty( 'globs' );
-            expect( steroidsGulp.globs ).to.be.an.object;
             expect( steroidsGulp ).to.have.ownProperty( 'options' );
             expect( steroidsGulp.options ).to.be.an.object;
 
@@ -53,7 +48,6 @@ describe( 'mrs-app-gulp', function () {
             expect( steroidsGulp ).to.have.deep.property('options.env');
             expect( steroidsGulp ).to.have.deep.property('options.brand');
             expect( steroidsGulp ).to.have.deep.property('options.generalOption');
-            expect( steroidsGulp ).to.have.deep.property('globs.someFiles[0]');
             expect( steroidsGulp ).to.have.deep.property('options.paths.out');
             expect( steroidsGulp.options.brand ).to.be.equal('test');
             done();
