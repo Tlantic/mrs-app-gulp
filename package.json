@@ -24,6 +24,8 @@
   "homepage": "https://github.com/Tlantic/mrs-app-gulp#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "fs": "0.0.2",
+    "gulp-clean-dest": "^0.1.1",
     "jshint": "^2.9.1",
     "mocha": "^2.4.5",
     "stream-assert": "^2.0.3"
@@ -32,7 +34,6 @@
     "bower": "^1.7.7",
     "del": "^2.2.0",
     "extendify": "^1.0.0",
-    "grunt-util": "^0.5.3",
     "gulp": "^3.9.1",
     "gulp-angular-filesort": "^1.1.1",
     "gulp-angular-templatecache": "^1.8.0",
