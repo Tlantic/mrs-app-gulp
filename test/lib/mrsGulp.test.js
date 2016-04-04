@@ -1,5 +1,4 @@
 var expect = require('chai').expect,
-    availableTasks = require('../_helpers/available-tasks'),
     mrsGulp = require('../../lib/mrsGulp');
 
 
@@ -39,7 +38,17 @@ describe('#mrsGulp()', function () {
 
     });
 
+    it('should be able to load a tasks from name.', function (done) {
+        steroidsGulp.load({
+            'clean': {}
+        });
+        steroidsGulp.load({
+            'test': {}
+        }, 'test/_assets/tasks/');
 
+        done();
+
+    });
 });
 
 
