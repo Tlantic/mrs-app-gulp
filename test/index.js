@@ -1,6 +1,5 @@
 var path = require( 'path' ),
-    fs = require( 'fs' ),
-    regFixHyphen = /-([a-z])/ig;
+    fs = require('fs');
 
 
 fs.readdirSync( __dirname ).forEach( function ( file ) {
