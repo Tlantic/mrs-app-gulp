@@ -21,7 +21,7 @@ describe('#mrsGulp()', function () {
     });
 
 
-    steroidsGulp = mrsGulp(require('gulp'), options);
+    steroidsGulp = mrsGulp(require('gulp')).init(options);
 
 
     it('should be an object with own properties load (function), mrsTasks (object), globs (object) and options (object)', function (done) {
