@@ -9,9 +9,7 @@ $ npm install --save-dev https://github.com/Tlantic/mrs-app-gulp.git
 
 ### 2.1 Using default options
 ```js
-var gulp = require(mrs-app-gulp)( require('gulp') );
-    
-gulp.init();
+var gulp = require(mrs-app-gulp)( require('gulp') ).init();
 ```
 
 ### 2.2 Using custom options
