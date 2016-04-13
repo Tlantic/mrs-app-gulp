@@ -1,31 +1,39 @@
 var expect = require('chai').expect,
     path = require('path'),
     mrsAppGulp = require('../../lib/mrsGulp'),
-    fs = require('fs');
+    fs = require('fs'),
+    directories = [];
 
+fs.readdirSync(__dirname).forEach(function (file) {
 
-describe( 'mrs-app-gulp', function () {
+    var filePath = path.join(__dirname, file),
+        fsStat = fs.statSync(filePath);
 
-    it('should be function of length 2', function (done) {
-        expect(mrsAppGulp).to.be.a.function;
-        expect(mrsAppGulp).to.have.length(2);
-        done();
-    });
+    if (fsStat.isFile()) {
 
+        if (file.endsWith('.js') && file !== 'index.js' && !file.startsWith('_')) {
+            describe('#' + path.basename(file, '.test.js'), function () {
+                require(filePath);
 
-    fs.readdirSync( __dirname ).forEach( function ( file ) {
+            });
+        }
 
-        if ( file !== 'index.js' && !file.startsWith( '_' ) ) {
+    } else if (fsStat.isDirectory()) {
 
-            describe( '#' + path.basename( file, '.test.js' ), function () {
-                require( path.join( __dirname, file ) );
-
-            } );
+        if (!file.startsWith('_')) {
+            directories.push(filePath);
+        }
 
         }
-    } );
 
+    } );
+directories.forEach(function (d) {
+
+    describe('#' + path.basename(d), function () {
+        require(path.join(d));
+    });
 });
+
 
 
 
