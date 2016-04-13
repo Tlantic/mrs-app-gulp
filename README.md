@@ -2,7 +2,7 @@
 
 ## 1. Install
 ```sh
-$ npm install --save-dev gulp-cli
+$ npm install --save-dev https://github.com/Tlantic/mrs-app-gulp.git
 ```
 
 ## 2. Create a `gulpfile.js` at the root of your project
