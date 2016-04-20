@@ -80,7 +80,7 @@ gulp.init(options);
 ## 3.1 Default Tasks
 A set of commonly used tasks are at your disposal.
 | Task Name                 | Behaviour Description                                             |
-| ------------------------- | -------------------------------------------------------------     |
+| ------------------------- |:-----------------------------------------------------------------:|
 | default                   | Runs **clean** and **build** tasks in sequence.                   |
 | clean                     | Delete content from fs.                                           |
 | install                   | Run **bower install** command.                                    |
@@ -92,10 +92,10 @@ A set of commonly used tasks are at your disposal.
 | build:config:cordova      | Replace content of *cordova config files*.                        |
 | build:i18n                | Extend and replace content of *json i18n* files.                  |
 | build:resources           | Minify image files.                                               |
-| build:lib                 | Copy files.       .                                               |
+| build:lib                 | Copy files.                                                       |
 | build:style               | Compile SASS and minify css.                                      |
 | build:img                 | Minify image files.                                               |
 | build:templates           | Copy and replaces content of template files.                      |
 | build:templates:cache     | Creates a cache file of angular templates.                        |
 | build:js                  | Minify, replaces and flattens content of js files by directory.   |
-| build:index-files         | Injects js and css files in html                                  |
+| build:index-files         | Injects js and css files in html.                                 |
