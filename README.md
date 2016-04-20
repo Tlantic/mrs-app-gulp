@@ -79,6 +79,7 @@ gulp.init(options);
 
 ## 3.1 Default Tasks
 A set of commonly used tasks are at your disposal.
+
 | Task Name                 | Behaviour Description                                             |
 | ------------------------- |:-----------------------------------------------------------------:|
 | default                   | Runs **clean** and **build** tasks in sequence.                   |
