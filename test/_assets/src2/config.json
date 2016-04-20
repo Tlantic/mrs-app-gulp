@@ -1,0 +1,27 @@
+[
+  {
+    "module": "MODULE1",
+    "code": "module1",
+    "numbers": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "module": "MODULE2",
+    "code": "module2",
+    "log": {
+      "debug": false,
+      "saveToFile": false
+    }
+  },
+  {
+    "module": "MODULE3",
+    "code": "module3",
+    "log": {
+      "debug": true,
+      "saveToFile": false
+    }
+  }
+]

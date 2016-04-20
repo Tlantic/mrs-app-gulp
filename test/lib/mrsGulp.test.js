@@ -14,14 +14,14 @@ describe('#mrsGulp()', function () {
         steroidsGulp;
 
 
-    it('should be function of length 2', function (done) {
+    it('should be function of length 1', function (done) {
         expect(mrsGulp).to.be.a.function;
-        expect(mrsGulp).to.have.length(2);
+        expect(mrsGulp).to.have.length(1);
         done();
     });
 
 
-    steroidsGulp = mrsGulp(require('gulp'), options);
+    steroidsGulp = mrsGulp(require('gulp')).init(options);
 
 
     it('should be an object with own properties load (function), mrsTasks (object), globs (object) and options (object)', function (done) {
