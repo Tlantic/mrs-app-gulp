@@ -1,5 +1,19 @@
 # mrs-app-gulp
 
+**Table of Contents**
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+- [1. Install](#1-install)
+- [2. Create a `gulpfile.js` at the root of your project](#2-create-a-gulpfilejs-at-the-root-of-your-project)
+  - [2.1 Using default options](#21-using-default-options)
+  - [2.2 Using custom options](#22-using-custom-options)
+- [3. Tasks](#3-tasks)
+- [3.1 Configuring Tasks](#31-configuring-tasks)
+- [3.1 Default Tasks](#31-default-tasks)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## 1. Install
 ```sh
 $ npm install --save-dev https://github.com/Tlantic/mrs-app-gulp.git
